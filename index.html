@@ -10,18 +10,23 @@
 <body>
     <form class="box" action="#">
         <h3>Please check your Email and Password validation</h3>
+        <div class="emailBox">
+            <label>
+                <input type="email" id="email" placeholder="Email">
+                <span class="emailText"></span>
+            </label>
+        </div>
 
-        <label class="emailBox">
-            <input type="email" id="email" placeholder="Email">
-            <span class="emailText"></span>
-        </label>
+        <div class="passBox">
+            <label>
+                <input type="password" id="password" placeholder="password">
+                <span class="passText"></span>
+            </label>
+        </div>
 
-        <label class="passBox">
-            <input type="password" id="password" placeholder="password">
-            <span class="passText"></span>
-        </label>
-        
-        <label for=""><button id="sub" type="submit">submit</button></label>
+        <div>
+            <label for=""><button id="sub" type="submit">submit</button></label>
+        </div>
     </form>
     <script src="/js/script.js"></script>
 </body>
