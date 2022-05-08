@@ -1,6 +1,15 @@
 $primarycolor: #3498db;
 $textcolor : #fff;
 
+@mixin disblock {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -28,11 +37,7 @@ body {
 }
 
 .box input[type="email"],.box input[type="password"] {
-    border: 0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
+    @include disblock();
     border: 2px solid $primarycolor;
     padding: 14px 10px;
     width: 200px;
@@ -47,11 +52,7 @@ body {
     border-color: #2ecc71;
 }
 button{
-    border: 0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
+    @include disblock();
     padding: 14px 10px;
     width: 200px;
     color: $textcolor;
