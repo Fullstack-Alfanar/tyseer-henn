@@ -8,14 +8,14 @@ subm.addEventListener("click", () => {
     let emailPattern = /^[a-zA-Z0-9" ".!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
     if (email.value.match(emailPattern)) {
-        emailBox.value=true;
-        emailBox.style.color = 'green';
+        emailBox.value = true;
+        emailText.style.color = 'green';
         emailText.innerHTML = "Your Email Address is Valid";
 
     }
     else {
-        emailBox.value=false;
-        emailBox.style.color = 'red';
+        emailBox.value = false;
+        emailText.style.color = 'red';
         emailText.innerHTML = "Your Email Address is Invalid";
     }
 
@@ -31,16 +31,16 @@ subm.addEventListener("click", () => {
     let passpat = /^(?!.*(012|123|234|345|456|567|678|789{3,})).*$/;
 
     if (password.value.match(passPattern)) {
-        passBox.value=true;
+        passBox.value = true;
         passText.style.color = 'green';
         passText.innerHTML = "Your Password is valid";
     }
-    
-   
+
+
     //------------------------------------------------------------
 
     else if (!password.value.match(passnum)) {
-        passBox.value=false;
+        passBox.value = false;
         passText.style.color = 'red';
         passText.innerHTML = "Your password doesn't has a numbers";
     }
@@ -48,42 +48,45 @@ subm.addEventListener("click", () => {
 
 
     else if (!password.value.match(passlength)) {
-        passBox.value=false;
+        passBox.value = false;
         passText.style.color = 'red';
         passText.innerHTML = "Your password has to be minimum 8 charcters";
     }
     //-------------------------------------------------------------
 
     else if (!password.value.match(specChar)) {
-        passBox.value=false;
+        passBox.value = false;
         passText.style.color = 'red';
         passText.innerHTML = "please add special charcters";
     }
     //-------------------------------------------------------------
 
     if (!password.value.match(passpat)) {
-        passBox.value=false;
+        passBox.value = false;
         passText.style.color = 'red';
         passText.innerHTML = "your password has 3 consecutive numbers.";
     }
 
     if (!password.value.match(passSmall)) {
-        passBox.value=false;
+        passBox.value = false;
         passText.style.color = 'red';
-        passText.innerHTML = "Your password doesn't has a lowercase letter"; 
+        passText.innerHTML = "Your password doesn't has a lowercase letter";
     }
     //-----------------------------------------------------
 
     else if (!password.value.match(passBig)) {
-        passBox.value=false
+        passBox.value = false
         passText.style.color = 'red';
         passText.innerHTML = "Your password doesn't has a big letter";
     }
 
-    else if (password.value.match(passEng)){
-        passBox.value=false;
+    else if (password.value.match(passEng)) {
+        passBox.value = false;
         passText.style.color = 'red';
         passText.innerHTML = "only english please";
     }
 });
+
+
+
 
