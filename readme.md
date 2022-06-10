@@ -25,5 +25,5 @@ one button:
  - `use the http repository`
  - `use my deploy`
  - `cd (The name of the repository)- choose the file homework which you want`
- - [click me](https://fullstack-alfanar.github.io/tyseer-henn/)
+ - [click me](https://tyseerhen.github.io/tyseer-henn/?#)
 
